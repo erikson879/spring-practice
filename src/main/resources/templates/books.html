@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Framework Erod</title>
+</head>
+<body>
+	<h1>Books List</h1>
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Isbn</th>
+			<th>publisher</th>
+		</tr>
+		<tr th:each="book : ${books}">
+			<td th:text="${book.title}">123</td>
+			<td th:text="${book.isbn}">Joe</td>
+			<td th:text="${book.publisher}">Bock</td>
+		</tr>
+	</table>
+</body>
+</html>
